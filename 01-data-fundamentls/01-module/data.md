@@ -3,4 +3,4 @@
 
 ## concepts
 
-![Conceptos generales de ciencia de datos](Concepts.jpg)
+![Conceptos generales de ciencia de datos](img/Concepts.jpg)
