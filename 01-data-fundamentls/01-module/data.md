@@ -110,5 +110,5 @@ Los datos nominales etiquetan variables sin valor cuantitativo (o numérico). Pu
 
 # Finalizacion modulo 1:
 
-![Prueba completada ] (../img/Prueba1.jpg)
+![Prueba completada ](../img/Prueba1.jpg)
 
