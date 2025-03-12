@@ -14,8 +14,10 @@
 
 ## Importancia de los Datos
 
-![¿Por que son importantes los datos?] (../img/Importancia.jpg)
- (../img/Importancia.2.jpg) 
+![¿Por qué son importantes los datos?](../img/Importancia.jpg)
+
+![Otra imagen sobre la importancia de los datos](../img/Importancia.2.jpg)
+
 
  ## Datos que se crean en la vida diaria
 
