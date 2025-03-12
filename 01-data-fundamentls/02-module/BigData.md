@@ -37,7 +37,7 @@
 # Valor
 ![Ejemplo](../img2/Valor.jpg)
 
-# Finzalizacion modulo 2
+# Finalizacion modulo 2
 
 ![Prueba](../img2/Prueba2.jpg)
 

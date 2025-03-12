@@ -42,3 +42,4 @@
 ## Finalizacion modulo 1
 
 ![Prueba](../img/Prueba.jpg)
+***
