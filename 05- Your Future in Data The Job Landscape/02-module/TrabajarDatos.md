@@ -55,3 +55,7 @@
 3. Si estás empezando y te interesa la ciencia de datos, DeShaun sugiere que:
     3.1 Tener curiosidad por las matemáticas
     3.2 Esté abierto a los desafíos y a aprender cosas nuevas de todos los recursos en línea disponibles sobre ciencia de datos y herramientas.
+
+
+## Finalizacion del modulo 2
+        
