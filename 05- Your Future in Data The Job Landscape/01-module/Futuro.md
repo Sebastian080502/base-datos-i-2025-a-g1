@@ -27,3 +27,10 @@
 
 
 ## ¿Cuál es el futuro del análisis de datos?
+
+- Si bien el alcance y la profundidad del análisis de datos son relativamente nuevos para muchas organizaciones, algunas industrias llevan tiempo recurriendo al análisis de datos. Por ejemplo, su uso en el sector sanitario es muy común. Las organizaciones sanitarias pueden predecir eficazmente los resultados de los pacientes, lo que puede resultar en una mejor asignación de fondos y mejores técnicas de diagnóstico.
+
+![Explicacion](../img/3.jpg)
+
+## Finalizacion modulo 1
+
