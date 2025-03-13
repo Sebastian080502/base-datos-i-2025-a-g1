@@ -33,3 +33,6 @@
 ## Finalizacion del module 3
 ![Prueba](../img3/Prueba3.jpg)
 
+
+## Finzalizacion Curso 
+![Prueba](../img3/PruebaCurso.jpg)
