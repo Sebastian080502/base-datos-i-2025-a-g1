@@ -3,10 +3,19 @@
 
 ## Concepts
 
-- En este módulo, aprenderás a explicar qué es la ciencia de datos. También aprenderás sobre la técnica de los 5 porqués y cómo usarla para identificar la causa raíz de un problema. Finalmente, descubrirás las similitudes y diferencias entre el análisis de datos y la ciencia de datos.
+- En este módulo, aprenderá cómo los proyectos de ciencia de datos en nuestro mundo impactan industrias, como la atención médica, el transporte, los deportes, el comercio electrónico y las plataformas sociales
 
 # Objetivos de aprendizaje
 
-1. Definir ciencia de datos
-2. Reconocer la importancia de ser curioso para resolver problemas con datos
-3. Diferenciar entre los campos de análisis de datos y ciencia de datos.
+1. Reconocer industrias y aplicaciones de la ciencia de datos en nuestro mundo para resolver problemas y ayudar a descubrir innovaciones.
+
+## Los científicos de datos han cambiado casi todas las industrias
+
+- La ciencia de datos ha revolucionado la forma en que se perciben los datos. Existen numerosas aplicaciones de la ciencia de datos en la salud, la banca, el comercio electrónico, la manufactura y más. Empresas de big data como Amazon, Google y Facebook utilizan conceptos de la ciencia de datos para obtener información y tomar decisiones empresariales para sus organizaciones.
+
+![Informacion](../img4/Conceptos.jpg)
+
+## Conclusion
+
+![conclusion](../img4/Conclusion.jpg)
+
