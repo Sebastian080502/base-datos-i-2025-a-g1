@@ -1,59 +1,3 @@
--- Significado de cada comando DOL
--- INSERT: Inserta nuevos datos en una tabla.
--- UPDATE: Actualiza datos existentes en una tabla.
--- DELETE: Elimina datos de una tabla.
--- SELECT: Selecciona datos de una tabla.
-
--- Insertar datos en una tabla
-INSERT INTO table_name (column1, column2, column3, ...)
-VALUES (value1, value2, value3, ...);
-
--- Actualizar datos existentes en una tabla
-UPDATE table_name
-SET column1 = value1, column2 = value2, ...
-WHERE condition;
-
--- Eliminar datos de una tabla
-DELETE FROM table_name
-WHERE condition;
-
--- Seleccionar datos de una tabla
-SELECT column1, column2, ...
-FROM table_name
-WHERE condition;
-
--- Ejemplo de uso de los comandos DOL
-
--- Crear una tabla llamada 'estudiantes'
-CREATE TABLE estudiantes (
-    id INT PRIMARY KEY,
-    nombre VARCHAR(50),
-    edad INT,
-    grado VARCHAR(10)
-);
-
--- Insertar datos en la tabla 'estudiantes'
-INSERT INTO estudiantes (id, nombre, edad, grado)
-VALUES (1, 'Juan Perez', 20, 'Segundo');
-
-INSERT INTO estudiantes (id, nombre, edad, grado)
-VALUES (2, 'Maria Gomez', 22, 'Tercero');
-
--- Actualizar datos existentes en la tabla 'estudiantes'
-UPDATE estudiantes
-SET edad = 21
-WHERE id = 1;
-
--- Eliminar datos de la tabla 'estudiantes'
-DELETE FROM estudiantes
-WHERE id = 2;
-
--- Seleccionar datos de la tabla 'estudiantes'
-SELECT id, nombre, edad, grado
-FROM estudiantes
-WHERE edad > 20;Ejemplo de uso de los comandos DOL
-
--- otro ejemplo
 -- Comandos DDL
 -- DDL (Data Definition Language) es un subconjunto del lenguaje SQL que se utiliza para definir y gestionar estructuras de datos, como bases de datos, tablas, índices, y vistas. Los comandos DDL más comunes incluyen:
 -- CREATE: para crear bases de datos y objetos como tablas, vistas, e índices.
@@ -107,7 +51,8 @@ CREATE TABLE country(
     id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(50) NOT NULL,
     description TEXT NULL,
-    status BOOLEAN DEFAULT true
+    status BOOLEAN DEFAULT true,
+    continent_id INT NOT NULL
 );
 
 -- Entity State
@@ -115,7 +60,8 @@ CREATE TABLE state(
     id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(50) NOT NULL,
     description TEXT NULL,
-    status BOOLEAN DEFAULT true
+    status BOOLEAN DEFAULT true,
+    country_id INT NOT NULL
 );
 
 -- Entity City
@@ -123,7 +69,8 @@ CREATE TABLE city(
     id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(50) NOT NULL,
     description TEXT NULL,
-    status BOOLEAN DEFAULT true
+    status BOOLEAN DEFAULT true,
+    state_id INT NOT NULL
 );
 
 -- Comandos DML
@@ -142,11 +89,20 @@ INSERT INTO continent(name, description, status)VALUES('Asia', 'Continent of Asi
 INSERT INTO continent(id, name, description, status)VALUES(200, 'Africa', 'Continent of Africa', true);
 
 -- Insert data into country
-INSERT INTO country(name, description)VALUES('Colombia', 'Country of Colombia');
-INSERT INTO country(name)VALUES('Peru');
-INSERT INTO country(name, description, status)VALUES('Brazil', 'Country of Brazil', false);
-INSERT INTO country(id, name, description, status)VALUES(200, 'Argentina', 'Country of Argentina', true);
+INSERT INTO country(name, description, continent_id)VALUES('Colombia', 'Country of Colombia',200);
+INSERT INTO country(name, continent_id)VALUES('Peru', 3);
+INSERT INTO country(name, description, status, continent_id)VALUES('Brazil', 'Country of Brazil', false,3);
+INSERT INTO country(id, name, description, status, continent_id)VALUES(200, 'Argentina', 'Country of Argentina', true, 200);
 
 -- Consult data
 SELECT * FROM continent;
 SELECT * FROM country;
+
+
+-- Query
+SELECT 
+	 c.name as Continent,
+     c2.name as Country
+FROM 
+	continent c
+    INNER JOIN country c2 ON c.id = c2.continent_id;
